@@ -1,45 +1,33 @@
 # Laboratorio Android. Cliente de GitHub
 
-## Descripción del Proyecto
-Este proyecto es un ejercicio de laboratorio para estudiantes donde se implementará una aplicación Android que simula un cliente de GitHub. La aplicación se centrará en la implementación de interfaces y layouts, sin integración con la API REST de GitHub en esta fase.
+## Datos del estudiante
+- Leonardo Falconi
+- Examen Parcial 1 — API REST con Retrofit
 
-## Funcionalidades Principales
+## Configuración local
 
-### 1. Lista de Repositorios
-- Implementación de un `RecyclerView` para mostrar una lista de repositorios
-- Cada repositorio se mostrará en un `Fragment` independiente
-- La lista será estática (hardcoded) para este ejercicio
-- Se implementará un diseño personalizado para cada ítem del repositorio
+Añade tu token de GitHub en `local.properties` (no se sube al repositorio):
 
-### 2. Formulario de Proyecto
-- Interfaz para ingresar datos de un nuevo proyecto
-- Campos incluidos:
-  - Nombre del proyecto
-  - Descripción del proyecto
-- El formulario será únicamente visual (sin funcionalidad de guardado)
+```properties
+sdk.dir=C\:\\Users\\TU_USUARIO\\AppData\\Local\\Android\\Sdk
+GITHUB_TOKEN=ghp_tu_token_aqui
+```
 
-## Objetivos de Aprendizaje
-- Implementación de `RecyclerView` en Android
-- Trabajo con Fragments
-- Diseño de layouts en XML
-- Estructuración de una aplicación Android
-- Manejo de interfaces de usuario
+El token debe tener permisos `repo` para crear, editar y eliminar repositorios.
 
-## Notas Importantes
-- Este es un ejercicio de práctica enfocado en la UI
-- No se implementará conexión con la API de GitHub
-- Los datos mostrados serán estáticos (hardcoded)
-- El formulario será solo para demostración de layouts
+## Funcionalidades implementadas
 
-## Elementos Gráficos (Widgets)
-- `TextView`: Para mostrar textos como nombres y descripciones de repositorios
-- `LinearLayout`: Como contenedor principal para organizar los elementos de forma vertical u horizontal
-- `ImageView`: Para mostrar avatares o iconos de repositorios
-- `EditText`: Para la entrada de texto en el formulario de creación de proyecto
+- Lista de repositorios propios, colaborativos y de organizaciones (`affiliation=owner,collaborator,organization_member`)
+- Editar y eliminar solo en repos con permiso `push` o `admin` (botones deshabilitados en solo lectura)
+- Lista de repositorios con `RecyclerView` y diseño XML personalizado por ítem
+- `RepoListFragment` y `RepoFormFragment`
+- FAB para abrir el formulario de creación
+- Botones vectoriales de edición y eliminación en cada ítem
+- Formulario con `EditText` (nombre bloqueado en modo edición)
+- Retrofit: GET, POST, PATCH y DELETE contra la API de GitHub
 
-## Tecnologías Utilizadas
-- Kotlin
-- Android SDK
-- RecyclerView
-- Fragments
-- Material Design Components
+## Tecnologías
+
+- Kotlin, Android SDK, XML, View Binding
+- RecyclerView, Fragments, Material Design
+- Retrofit, Gson, OkHttp, Glide
