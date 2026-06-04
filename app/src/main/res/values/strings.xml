@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Github Client</string>
+    <string name="add_repository">Agregar repositorio</string>
+    <string name="edit_repository">Editar repositorio</string>
+    <string name="create_repository">Crear repositorio</string>
+    <string name="delete_repository">Eliminar repositorio</string>
+    <string name="owner_avatar">Avatar del propietario</string>
+    <string name="repo_name">Nombre del proyecto</string>
+    <string name="repo_description">Descripción del proyecto</string>
+    <string name="repo_name_hint">Nombre del repositorio</string>
+    <string name="repo_description_hint">Descripción del repositorio</string>
+    <string name="no_description">Sin descripción</string>
+    <string name="no_language">No especificado</string>
+    <string name="label_repo_name">Nombre</string>
+    <string name="label_repo_description">Descripción</string>
+    <string name="label_repo_language">Lenguaje</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_confirm_title">¿Eliminar repositorio?</string>
+    <string name="delete_confirm_message">Se eliminará \"%1$s\". Esta acción no se puede deshacer.</string>
+    <string name="delete_success">Repositorio eliminado</string>
+    <string name="create_success">Repositorio creado</string>
+    <string name="update_success">Repositorio actualizado</string>
+    <string name="error_name_required">El nombre es obligatorio</string>
+    <string name="error_auth">Error de autenticación. Verifica GITHUB_TOKEN en local.properties</string>
+    <string name="error_forbidden">Acceso prohibido. Verifica los permisos del token</string>
+    <string name="error_not_found_repo">Repositorio no encontrado o sin permiso de escritura. Verifica que sea tuyo y que el token tenga scope repo</string>
+    <string name="error_http">Error %1$d: %2$s</string>
+    <string name="connection_error">Error de conexión: %1$s</string>
 </resources>
